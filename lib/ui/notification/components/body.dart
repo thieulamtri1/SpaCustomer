@@ -14,7 +14,7 @@ class _BodyState extends State<Body> {
   getToken() async {
     await Firebase.initializeApp();
     _firebaseMessaging.getToken().then((value) {
-      print("Device Token: $value");
+      print("Device Token ne: $value");
     });
   }
 
